@@ -21,7 +21,7 @@ import androidx.fragment.app.FragmentManager;
 
 public class ShowinfoDialog extends DialogFragment {
     private MyDialogEventListener eventListener;
-    private String infoText; // متغیری برای نگهداری متن اطلاعات
+    private String infoText; 
     private String number;
 
     @Override
