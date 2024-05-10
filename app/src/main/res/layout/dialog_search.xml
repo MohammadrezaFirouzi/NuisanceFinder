@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/idTVtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="در حال جستجو..."
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/mmd"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            app:lottie_rawRes="@raw/searching"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            android:layout_height="300dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="end"
+            android:textSize="20sp"
+            android:background="@drawable/button_back"
+            android:text="لغو"
+            app:backgroundTint="#0DA0FF" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

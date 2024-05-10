@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="38dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+
+            <ImageView
+                android:id="@+id/exit"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/exit"
+                android:layout_alignParentEnd="true"/>
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/call"/>
+        </RelativeLayout>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/user"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            app:civ_border_color="@color/gray_btn_bg_color"/>
+
+        <TextView
+            android:id="@+id/textview_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0912000000"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="محمدرضا "
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="end"
+            android:textSize="20sp"
+            android:background="@drawable/button_back"
+            android:text="ذخیره کردن"
+            app:backgroundTint="#0DA0FF" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
